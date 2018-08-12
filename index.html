@@ -5,7 +5,8 @@
 </head>
 <body>
 
-	<a href="https://developers.google.com/youtube/iframe_api_reference">reference link</a><br>
+	<a href="https://developers.google.com/youtube/iframe_api_reference" target="_blank" ">Youtube Developers API</a><br>
+	<a href="https://tutorialzine.com/2015/08/how-to-control-youtubes-video-player-with-javascript" target="_blank" ">Youtube iFrame Javascript Guide</a><br><br>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
 
@@ -28,7 +29,11 @@
           height: '540',
           width: '960',
           videoId: 'QR4EbVDkWcI',
-          controls:0,
+          playerVars: { // https://tutorialzine.com/2015/08/how-to-control-youtubes-video-player-with-javascript
+          	disablekb: 1, // disblae keyboard controls
+          	controls:0 // disable controls such as play button, pause, timeline, etc
+
+          },
           events: {
             // 'onReady': onPlayerReady,
             // 'onStateChange': onPlayerStateChange
@@ -54,6 +59,10 @@
       function stopVideo() {
         player.stopVideo();
       }
+
+      
+
+      
     </script>
   </body>
 
