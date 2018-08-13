@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Content UI/UX</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -9,7 +10,14 @@
 	<a href="https://tutorialzine.com/2015/08/how-to-control-youtubes-video-player-with-javascript" target="_blank" ">Youtube iFrame Javascript Guide</a><br><br>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
-
+    <div id="controls">
+		<button type="button" id="button_play" class="btn" onclick='buttonPlayPress()'>
+	      <i class="fa fa-play">Play</i>
+	    </button>
+		<button type="button" id="button_pause" class="btn" onclick='buttonPausePress()'>
+	      <i class="fa fa-pause">Pause</i>
+	    </button>
+    </div>
 
 
 
